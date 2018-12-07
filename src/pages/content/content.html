@@ -7,5 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="fingerAuth()">Show Fingerprint Dialog</button>
+  <ion-row class="login-row" align-items-center>
+    <ion-col col-5></ion-col>
+    <ion-col col-2 class="lock-col">
+      <div class="lock-bg"></div>
+      <img src="../../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Bandera Rounded.png" class="lock-img" tappable (click)="login()" alt="Logo SIGAPP">
+    </ion-col>
+    <ion-col col-5></ion-col>
+  </ion-row>
 </ion-content>
