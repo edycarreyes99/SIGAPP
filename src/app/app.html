@@ -2,8 +2,8 @@
 
     <ion-content>
         <ion-item class="background-profile" color="positive" menuClose="" on-click="goToCameraTabDefaultPage()" id="side-menu21-list-item8">
-            <ion-avatar item-center>
-                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="User Profile">
+            <ion-avatar padding-bottom item-center>
+                <img src="https://firebasestorage.googleapis.com/v0/b/proyecto-robotica-35bed.appspot.com/o/Profile%20Pictures%2Fedycarreyes%40gmail.com_InShot_20180427_185247614.jpg?alt=media&token=948f8280-e349-4571-b467-920dd6727af2" alt="User Profile">
             </ion-avatar>
             <h2 class="text-white">
                 Edycar Reyes
@@ -12,8 +12,8 @@
                 edycarreyes@gmail.com
             </h4>
         </ion-item>
-        <ion-list>
-            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-list padding-top padding-left>
+            <button padding-bottom menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
                 {{p.title}}
             </button>
         </ion-list>
