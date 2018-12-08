@@ -2,7 +2,7 @@ import { MainPage } from './../index';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, Platform,ModalController } from 'ionic-angular';
 import { FingerprintAIO, FingerprintOptions } from "@ionic-native/fingerprint-aio";
-
+import { StatusBar } from "@ionic-native/status-bar";
 
 @IonicPage()
 @Component({
@@ -15,13 +15,15 @@ export class ContentPage {
     public navCtrl: NavController,
     public platform: Platform,
     public fingerprint: FingerprintAIO,
-    public modalCtrl: ModalController
+    public modalCtrl: ModalController,
+    public statusbar: StatusBar
   ) {
     this.FingerprintOptions = {
       clientId: 'SIGAPP',
       clientSecret: 'password',
       disableBackup: true
-    }
+    };
+    this.statusbar.hide();
    }
 
    login(){
