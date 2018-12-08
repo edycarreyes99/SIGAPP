@@ -12,8 +12,8 @@
                 edycarreyes@gmail.com
             </h4>
         </ion-item>
-        <ion-list padding-top padding-left>
-            <button padding-bottom menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-list padding-top padding-left no-lines>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
                 {{p.title}}
             </button>
         </ion-list>
