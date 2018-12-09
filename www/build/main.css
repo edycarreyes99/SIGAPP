@@ -137180,6 +137180,14 @@ page-item-detail .item-detail {
   position: absolute;
 }
 
+.ios page-settings .scroll-content, .md page-settings .scroll-content {
+  background-color: #f4f4f4;
+}
+
+.ios page-settings ion-card-header, .md page-settings ion-card-header {
+  font-weight: bold;
+}
+
 page-tutorial .toolbar-background {
   background: transparent;
   border-color: transparent;
