@@ -75,23 +75,23 @@ var map = {
 	],
 	"../pages/settings/settings.module": [
 		338,
-		4
+		0
 	],
 	"../pages/signup/signup.module": [
 		339,
-		3
+		4
 	],
 	"../pages/tabs/tabs.module": [
 		340,
-		2
+		3
 	],
 	"../pages/tutorial/tutorial.module": [
 		341,
-		1
+		2
 	],
 	"../pages/welcome/welcome.module": [
 		342,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
