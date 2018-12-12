@@ -1,4 +1,4 @@
-<ion-header>
+<!--<ion-header>
 
   <ion-navbar>
     <ion-title>{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
@@ -10,10 +10,17 @@
     </ion-buttons>
   </ion-navbar>
 
+</ion-header>-->
+<ion-header>
+  <ion-navbar color="red">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Componentes</ion-title>
+  </ion-navbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding-top>
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
@@ -25,11 +32,11 @@
         <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
       </button>
 
-      <ion-item-options>
+      <!--<ion-item-options>
         <button ion-button color="danger" (click)="deleteItem(item)">
           {{ 'DELETE_BUTTON' | translate }}
         </button>
-      </ion-item-options>
+      </ion-item-options>-->
     </ion-item-sliding>
   </ion-list>
 </ion-content>
