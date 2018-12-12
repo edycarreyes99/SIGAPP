@@ -1,14 +1,12 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
-import { MatDialog } from '@angular/material';
 
 @Injectable()
 export class ServicioService {
   constructor(
     public afAuth: AngularFireAuth,
-    private af: AngularFireDatabase,
-    private dialog: MatDialog,
+    private af: AngularFireDatabase
   ) { }
 
   registerUser(email, pass) {
