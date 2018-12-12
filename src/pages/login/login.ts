@@ -1,4 +1,3 @@
-import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
@@ -21,8 +20,8 @@ export class LoginPage {
   loginForm: FormGroup;
   loginError: string;
   account: { email: string, password: string } = {
-    email: 'test@example.com',
-    password: 'test'
+    email: 'edycarreyes@gmail.com',
+    password: '123123'
   };
 
   // Our translated text strings
@@ -43,18 +42,42 @@ export class LoginPage {
       this.loginErrorString = value;
     })
   }
-  login(){
-    this.servicio.loginEmail(this.account.email,this.account.password).then((user:any)=>{
-      this.navCtrl.push(TabsPage);
+  login() {
+    this.servicio.loginEmail(this.account.email, this.account.password).then((user) => {
+      this.navCtrl.push('TabsPage');
       const toast = this.toastCtrl.create({
-        message: `Bienvenido ${user.email}`
+        message: `Bienvenido ${this.servicio.afAuth.auth.currentUser.email}`,
+        duration: 3000,
+        position: 'top'
       });
       toast.present();
-    }).catch((err)=>{
-      const toast = this.toastCtrl.create({
-        message: err
-      });
-      toast.present();
+    }).catch((err) => {
+      switch (err.code) {
+        case 'auth/user-not-found':
+          const toast = this.toastCtrl.create({
+            message: 'Este email no corresponde a ninguna cuenta registrada.',
+            duration: 3000,
+            position: 'top'
+          });
+          toast.present();
+          break;
+        case 'auth/wrong-password':
+          const toast2 = this.toastCtrl.create({
+            message: 'La contraseña es inválida o el usuario no posee contraseña.',
+            duration: 3000,
+            position: 'top'
+          });
+          toast2.present();
+          break;
+        default:
+          const toastdefault = this.toastCtrl.create({
+            message: err,
+            duration: 3000,
+            position: 'top'
+          });
+          toastdefault.present();
+      }
+      console.log(err);
     });
   }
   // Attempt to login in through our User service

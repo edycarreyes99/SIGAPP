@@ -22,6 +22,10 @@ import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
 
 
+//Importaciones del Stepper
+import { IonicStepperModule } from "ionic-stepper";
+
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -68,6 +72,8 @@ export function provideSettings(storage: Storage) {
     }),
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
+
+    IonicStepperModule,
 
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule

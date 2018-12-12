@@ -8,12 +8,29 @@
 
 
 <ion-content>
-  <form (submit)="doSignup()">
+  <ion-stepper #stepper (selectIndexChange)="selectChange($event)">
+    <ion-step label="Step1" description="Step1 description">
+      <h2>Step1 Content</h2>
+      <p>Step1 Content</p>
+      <button ion-button small ionicStepperNext>Next</button>
+    </ion-step>
+    <ion-step label="Step2 - Step2 - Step2" description="Step1 description">
+      <h2>Step2 Content</h2>
+      <p>Step2 Content</p>
+      <button ion-button color="light" small ionicStepperPrevious>Previous</button>
+    </ion-step>
+  </ion-stepper>
+  <form (submit)="signup()">
     <ion-list>
 
       <ion-item>
         <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Surname</ion-label>
+        <ion-input type="text" [(ngModel)]="account.surname" name="surname"></ion-input>
       </ion-item>
 
       <ion-item>
