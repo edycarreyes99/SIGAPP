@@ -15,10 +15,25 @@ import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 import { NotificationManagerProvider } from '../providers/notification-manager/notification-manager';
 
+
+//Importaciones de Firebase
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
+
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBjDKoeFzmHoQCrbjeHZ2AU4k90TWXcB5w",
+  authDomain: "sigapp-firecodes.firebaseapp.com",
+  databaseURL: "https://sigapp-firecodes.firebaseio.com",
+  projectId: "sigapp-firecodes",
+  storageBucket: "sigapp-firecodes.appspot.com",
+  messagingSenderId: "658303972824"
 }
 
 export function provideSettings(storage: Storage) {
@@ -51,7 +66,10 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -64,6 +82,7 @@ export function provideSettings(storage: Storage) {
     Camera,
     SplashScreen,
     StatusBar,
+    AngularFireAuth,
     FingerprintAIO,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
