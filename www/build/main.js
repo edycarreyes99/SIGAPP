@@ -331,7 +331,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_fingerprint_aio__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__servicio_service__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__servicio_service__ = __webpack_require__(945);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__mocks_providers_items__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(731);
@@ -680,81 +680,6 @@ var User = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 446:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicioService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(720);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ServicioService = /** @class */ (function () {
-    function ServicioService(afAuth, af) {
-        this.afAuth = afAuth;
-        this.af = af;
-    }
-    ServicioService.prototype.registerUser = function (email, pass) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            _this.afAuth.auth.createUserWithEmailAndPassword(email, pass)
-                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
-        });
-    };
-    ServicioService.prototype.loginEmail = function (email, pass) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            _this.afAuth.auth.signInWithEmailAndPassword(email, pass)
-                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
-        });
-    };
-    ServicioService.prototype.getAuth = function () {
-        return this.afAuth.authState.map(function (user) { return user; });
-    };
-    ServicioService.prototype.logout = function () {
-        return this.afAuth.auth.signOut().then(function () {
-            console.log("Se ha cerrado sesion");
-            location.reload();
-        }).catch(function (error) {
-            console.log(error);
-        });
-    };
-    ServicioService.prototype.verificaUsuario = function () {
-        var user = this.afAuth.auth.currentUser;
-        user.sendEmailVerification().then(function () {
-            //email sent
-            console.log('Mensaje de Confirmacion Enviado');
-        }).catch(function (error) {
-            console.log(error);
-        });
-    };
-    ServicioService.prototype.emailVerified = function () {
-    };
-    ServicioService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["AngularFireAuth"],
-            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["AngularFireDatabase"]])
-    ], ServicioService);
-    return ServicioService;
-}());
-
-//# sourceMappingURL=servicio.service.js.map
-
-/***/ }),
-
 /***/ 731:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -894,6 +819,85 @@ var NotificationManagerProvider = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=notification-manager.js.map
+
+/***/ }),
+
+/***/ 945:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicioService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ServicioService = /** @class */ (function () {
+    function ServicioService(afAuth, af) {
+        this.afAuth = afAuth;
+        this.af = af;
+    }
+    ServicioService.prototype.registerUser = function (email, pass) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.afAuth.auth.createUserWithEmailAndPassword(email, pass)
+                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
+        });
+    };
+    ServicioService.prototype.loginEmail = function (email, pass) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.afAuth.auth.signInWithEmailAndPassword(email, pass)
+                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
+        });
+    };
+    ServicioService.prototype.getAuth = function () {
+        return this.afAuth.authState.map(function (user) { return user; });
+    };
+    ServicioService.prototype.signInWithEmail = function (credentials) {
+        console.log('Sign in with email');
+        return this.afAuth.auth.signInWithEmailAndPassword(credentials.email, credentials.password);
+    };
+    ServicioService.prototype.logout = function () {
+        return this.afAuth.auth.signOut().then(function () {
+            console.log("Se ha cerrado sesion");
+            location.reload();
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+    ServicioService.prototype.verificaUsuario = function () {
+        var user = this.afAuth.auth.currentUser;
+        user.sendEmailVerification().then(function () {
+            //email sent
+            console.log('Mensaje de Confirmacion Enviado');
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+    ServicioService.prototype.emailVerified = function () {
+    };
+    ServicioService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["AngularFireAuth"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["AngularFireAuth"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["AngularFireDatabase"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["AngularFireDatabase"]) === "function" && _b || Object])
+    ], ServicioService);
+    return ServicioService;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=servicio.service.js.map
 
 /***/ })
 

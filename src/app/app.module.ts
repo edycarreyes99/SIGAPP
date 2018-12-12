@@ -9,7 +9,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { FingerprintAIO } from "@ionic-native/fingerprint-aio";
-import { ServicioService } from "../servicio.service";
+import { ServicioService } from "./servicio.service";
 
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
