@@ -22,7 +22,7 @@ import { NotificationManagerProvider } from '../providers/notification-manager/n
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
 import { AngularFireDatabaseModule,AngularFireDatabase } from "angularfire2/database";
-
+import { AngularFirestoreModule,AngularFirestore } from "angularfire2/firestore";
 
 //Importaciones del Stepper
 import { IonicStepperModule } from "ionic-stepper";
@@ -79,8 +79,7 @@ export function provideSettings(storage: Storage) {
     IonicStepperModule,
 
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -94,7 +93,6 @@ export function provideSettings(storage: Storage) {
     SplashScreen,
     StatusBar,
     AngularFireAuth,
-    AngularFireDatabase,
     FingerprintAIO,
     ServicioService,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },

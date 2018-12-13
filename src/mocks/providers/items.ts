@@ -14,45 +14,103 @@ export class Items {
 
 
   constructor() {
-    let items = [
+    let items2016 = [
       {
-        "name": "Burt Bear",
+        "name": "Biologia General",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "about": "Burt is a Bear.",
+        "ciclo": 1
       },
       {
-        "name": "Charlie Cheetah",
+        "name": "ALGEBRA LINEAL",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "about": "Charlie is a Cheetah.",
+        "ciclo": 1
       },
       {
-        "name": "Donald Duck",
+        "name": "COMUNICACION Y LENGUAJE",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "about": "Donald is a Duck.",
+        "ciclo": 1
       },
       {
-        "name": "Eva Eagle",
+        "name": "HISTORIA DE NICARAGUA",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "about": "Eva is an Eagle.",
+        "ciclo": 1
       },
       {
-        "name": "Ellie Elephant",
+        "name": "INGLES",
+        "profilePic": "assets/img/speakers/elephant.jpg",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 1
+      },
+      {
+        "name": "ACTIVIDAD ESTUDIANTIL",
+        "profilePic": "assets/img/speakers/mouse.jpg",
+        "about": "Molly is a Mouse.",
+        "ciclo": 1
+      },
+      {
+        "name": "FILOSOFIA",
+        "profilePic": "assets/img/speakers/puppy.jpg",
+        "about": "Paul is a Puppy.",
+        "ciclo": 1
+      },{
+        "name": "COMUNICACION Y LENGUAJE",
+        "profilePic": "assets/img/speakers/duck.jpg",
+        "about": "Donald is a Duck.",
+        "ciclo": 1
+      },
+      {
+        "name": "MATEMATICA BASICA",
+        "profilePic": "assets/img/speakers/eagle.jpg",
+        "about": "Eva is an Eagle.",
+        "ciclo": 1
+      },
+      {
+        "name": "CALCULO I",
         "profilePic": "assets/img/speakers/elephant.jpg",
         "about": "Ellie is an Elephant."
       },
       {
-        "name": "Molly Mouse",
+        "name": "FUNDAMENTOS DE INFORMATICA",
         "profilePic": "assets/img/speakers/mouse.jpg",
         "about": "Molly is a Mouse."
       },
       {
-        "name": "Paul Puppy",
+        "name": "ELECTIVA DE ACTIVIDAD ESTUDIANTIL II ",
         "profilePic": "assets/img/speakers/puppy.jpg",
         "about": "Paul is a Puppy."
+      },
+      {
+        "name": "EDUCACION AMBIENTAL",
+        "profilePic": "assets/img/speakers/bear.jpg",
+        "about": "Burt is a Bear."
+      },
+      {
+        "name": "LOGICA DE PROGRAMACION",
+        "profilePic": "assets/img/speakers/cheetah.jpg",
+        "about": "Charlie is a Cheetah."
+      },
+      {
+        "name": "LABORATORIO DE LOGICA DE PROGRAMACION",
+        "profilePic": "assets/img/speakers/duck.jpg",
+        "about": "Donald is a Duck."
+      },
+      {
+        "name": "OFIMATICA APLICADA",
+        "profilePic": "assets/img/speakers/eagle.jpg",
+        "about": "Eva is an Eagle."
+      },
+      {
+        "name": "INGLES APLICADO I",
+        "profilePic": "assets/img/speakers/elephant.jpg",
+        "about": "Ellie is an Elephant."
       }
     ];
 
-    for (let item of items) {
+    for (let item of items2016) {
       this.items.push(new Item(item));
     }
   }
