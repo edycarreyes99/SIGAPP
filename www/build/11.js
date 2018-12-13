@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 725:
+/***/ 726:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__content__ = __webpack_require__(880);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__content__ = __webpack_require__(881);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,14 +44,14 @@ var ContentPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 880:
+/***/ 881:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_fingerprint_aio__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_fingerprint_aio__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -98,7 +98,7 @@ var ContentPage = /** @class */ (function () {
     };
     ContentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-content',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\content\content.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Fingerprint Authentication\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-row class="login-row" align-items-center>\n\n    <ion-col col-5></ion-col>\n\n    <ion-col col-2 class="lock-col">\n\n      <div class="lock-bg"></div>\n\n      <img src="../../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Bandera Rounded.png" class="lock-img" tappable (click)="login()" alt="Logo SIGAPP">\n\n    </ion-col>\n\n    <ion-col col-5></ion-col>\n\n  </ion-row>\n\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\content\content.html"*/
+            selector: 'page-content',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\content\content.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="amber">\n\n    <ion-title>Mi Perfil</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <div class="item-profile" text-center #profilePic>\n\n  </div>\n\n   <ion-item class="background-profile" id="side-menu21-list-item8">\n\n            <ion-avatar padding-bottom item-center>\n\n                <img src="https://firebasestorage.googleapis.com/v0/b/proyecto-robotica-35bed.appspot.com/o/Profile%20Pictures%2Fedycarreyes%40gmail.com_InShot_20180427_185247614.jpg?alt=media&token=948f8280-e349-4571-b467-920dd6727af2" alt="User Profile">\n\n            </ion-avatar>\n\n            <h2>\n\n                Edycar Reyes\n\n            </h2>\n\n            <h4>\n\n                edycarreyes@gmail.com\n\n            </h4>\n\n        </ion-item>\n\n\n\n  <div class="item-detail" padding>\n\n    <h2>{{item.name}}</h2>\n\n    <h2>Pre-Requisito 1</h2>\n\n    <p>{{item.requisito1}}</p>\n\n    <h2>Pre-Requisito 2</h2>\n\n    <p>{{item.requisito2}}</p>\n\n    <h2>Créditos</h2>\n\n    <p>{{item.creditos}}</p>\n\n    <h2>Primer Parcial</h2>\n\n    <p>{{item.parcial1}}</p>\n\n    <h2>Segundo Parcial</h2>\n\n    <p>{{item.parcial2}}</p>\n\n    <h2>Tercer Parcial</h2>\n\n    <p>{{item.parcial3}}</p>\n\n    <h2>Nota Final</h2>\n\n    <p>{{item.notafinal}}</p>\n\n    <h2>Segunda Convocatoria</h2>\n\n    <p>{{item.segundaconvocatoria}}</p>\n\n    <h2>Curso de Verano</h2>\n\n    <p>{{item.cursoverano}}</p>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\content\content.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Platform"],

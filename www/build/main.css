@@ -137310,6 +137310,14 @@ ion-step-header .ionic-step-header-description-error {
   color: white;
 }
 
+page-home .item-profile {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
+  background-image: url("http://globalpathholidays.com/wp-content/uploads/2015/08/landing-page-large.jpg");
+}
+
 page-item-create .profile-image-wrapper {
   text-align: center;
   margin: 20px 0;
@@ -137354,12 +137362,28 @@ page-item-detail .item-detail {
   position: absolute;
 }
 
+page-menu .item-profile {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
+  background-image: url("http://globalpathholidays.com/wp-content/uploads/2015/08/landing-page-large.jpg");
+}
+
 .ios page-settings .scroll-content, .md page-settings .scroll-content {
   background-color: #f4f4f4;
 }
 
 .ios page-settings ion-card-header, .md page-settings ion-card-header {
   font-weight: bold;
+}
+
+.ios page-settings .item-profile, .md page-settings .item-profile {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
+  background-image: url("http://globalpathholidays.com/wp-content/uploads/2015/08/landing-page-large.jpg");
 }
 
 page-tutorial .toolbar-background {

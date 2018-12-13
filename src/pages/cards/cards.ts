@@ -1,5 +1,6 @@
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,19 @@ import { IonicPage, NavController } from 'ionic-angular';
 export class CardsPage {
   cardItems: any[];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public iab: InAppBrowser, public alerCtrls: AlertController) {
+    const alert = this.alerCtrls.create({
+      title: 'Solicitudes de Beca Cerradas"',
+      subTitle: 'Las solicitudes de beca aun no esta activas, porfavor vuelva luego',
+      buttons: ['OK']
+    });
+    alert.present();
+    const browser = this.iab.create('https://ionicframework.com/');
+    browser.on('loadstop').subscribe(event => {
+      browser.insertCSS({ code: "body{color: red;" });
+    });
+
+    browser.close();
     this.cardItems = [
       {
         user: {

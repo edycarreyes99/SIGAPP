@@ -12,6 +12,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { FingerprintAIO } from "@ionic-native/fingerprint-aio";
 import { ServicioService } from "./servicio.service";
 
+import { InAppBrowser } from "@ionic-native/in-app-browser";
+
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
@@ -88,6 +90,7 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    InAppBrowser,
     User,
     Camera,
     SplashScreen,

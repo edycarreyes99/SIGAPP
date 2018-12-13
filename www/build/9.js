@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 727:
+/***/ 728:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_detail__ = __webpack_require__(882);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_detail__ = __webpack_require__(883);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ItemDetailPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 882:
+/***/ 883:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73,10 +73,9 @@ var ItemDetailPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-item-detail',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\item-detail\item-detail.html"*/'<ion-header>\n\n  <ion-navbar color="amber">\n    <ion-title>{{ item.name }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <div class="item-profile" text-center #profilePic>\n  </div>\n\n  <div class="item-detail" padding>\n    <h2>{{item.name}}</h2>\n    <h2>Pre-Requisito 1</h2>\n    <p>{{item.requisito1}}</p>\n    <h2>Pre-Requisito 2</h2>\n    <p>{{item.requisito2}}</p>\n    <h2>Créditos</h2>\n    <p>{{item.creditos}}</p>\n    <h2>Primer Parcial</h2>\n    <p>{{item.parcial1}}</p>\n    <h2>Segundo Parcial</h2>\n    <p>{{item.parcial2}}</p>\n    <h2>Tercer Parcial</h2>\n    <p>{{item.parcial3}}</p>\n    <h2>Nota Final</h2>\n    <p>{{item.notafinal}}</p>\n    <h2>Segunda Convocatoria</h2>\n    <p>{{item.segundaconvocatoria}}</p>\n    <h2>Curso de Verano</h2>\n    <p>{{item.cursoverano}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\item-detail\item-detail.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
     ], ItemDetailPage);
     return ItemDetailPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=item-detail.js.map

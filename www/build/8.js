@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 728:
+/***/ 729:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_master__ = __webpack_require__(883);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_master__ = __webpack_require__(884);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ListMasterPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 883:
+/***/ 884:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -353,10 +353,9 @@ var ListMasterPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-list-master',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\list-master\list-master.html"*/'<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{ \'LIST_MASTER_TITLE\' | translate }}</ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="addItem()">\n\n        <ion-icon name="add"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n<ion-header>\n\n  <ion-navbar color="red">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Componentes</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="addItem()">\n\n        <ion-icon name="more"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n  <ion-segment [(ngModel)]="ano" color="red" padding>\n\n    <ion-segment-button value="2016">\n\n      2016\n\n    </ion-segment-button>\n\n    <ion-segment-button value="2017">\n\n      2017\n\n    </ion-segment-button>\n\n    <ion-segment-button value="2018">\n\n      2018\n\n    </ion-segment-button>\n\n  </ion-segment>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div [ngSwitch]="ano">\n\n    <ion-list *ngSwitchCase="2016">\n\n      <ion-item-sliding *ngFor="let item of items2016">\n\n        <button ion-item (click)="openItem(item)">\n\n          <ion-avatar item-start>\n\n            <img [src]="item.profilePic" />\n\n          </ion-avatar>\n\n          <h2>{{item.name}}</h2>\n\n          <p>Ciclo: {{item.ciclo}}</p>\n\n          <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>\n\n        </button>\n\n\n\n        <!--<ion-item-options>\n\n          <button ion-button color="danger" (click)="deleteItem(item)">\n\n            {{ \'DELETE_BUTTON\' | translate }}\n\n          </button>\n\n        </ion-item-options>-->\n\n      </ion-item-sliding>\n\n    </ion-list>\n\n\n\n    <ion-list *ngSwitchCase="2017">\n\n      <ion-item-sliding *ngFor="let item of items2017">\n\n        <button ion-item (click)="openItem(item)">\n\n          <ion-avatar item-start>\n\n            <img [src]="item.profilePic" />\n\n          </ion-avatar>\n\n          <h2>{{item.name}}</h2>\n\n          <p>Ciclo: {{item.ciclo}}</p>\n\n          <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>\n\n        </button>\n\n\n\n        <!--<ion-item-options>\n\n          <button ion-button color="danger" (click)="deleteItem(item)">\n\n            {{ \'DELETE_BUTTON\' | translate }}\n\n          </button>\n\n        </ion-item-options>-->\n\n      </ion-item-sliding>\n\n    </ion-list>\n\n\n\n    <ion-list *ngSwitchCase="2018">\n\n      <ion-item-sliding *ngFor="let item of items2018">\n\n        <button ion-item (click)="openItem(item)">\n\n          <ion-avatar item-start>\n\n            <img [src]="item.profilePic" />\n\n          </ion-avatar>\n\n          <h2>{{item.name}}</h2>\n\n          <p>Ciclo: {{item.ciclo}}</p>\n\n          <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>\n\n        </button>\n\n\n\n        <!--<ion-item-options>\n\n          <button ion-button color="danger" (click)="deleteItem(item)">\n\n            {{ \'DELETE_BUTTON\' | translate }}\n\n          </button>\n\n        </ion-item-options>-->\n\n      </ion-item-sliding>\n\n    </ion-list>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\list-master\list-master.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]])
     ], ListMasterPage);
     return ListMasterPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=list-master.js.map
