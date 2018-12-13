@@ -4,6 +4,9 @@ import { IonicPage, ModalController, NavController } from 'ionic-angular';
 import { Item } from '../../models/item';
 import { Items } from '../../providers';
 
+import { AngularFireDatabase, AngularFireList } from "angularfire2/database";
+import { Observable } from 'rxjs';
+
 @IonicPage()
 @Component({
   selector: 'page-list-master',
@@ -11,15 +14,27 @@ import { Items } from '../../providers';
 })
 export class ListMasterPage {
   currentItems: Item[];
+  estudiantes: Observable<any[]>;
 
-  constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
-    this.currentItems = this.items.query();
+  constructor(
+    public navCtrl: NavController, 
+    public items: Items, 
+    public modalCtrl: ModalController,
+    public db: AngularFireDatabase
+  ) {
+    
+    this.estudiantes = this.db.list('/Estudiantes').snapshotChanges().map(changes=>{
+      return changes.map(c=>({
+        key: c.payload.key, ...c.payload.val()
+      }))
+    });
   }
 
   /**
    * The view loaded, let's query our items for the list
    */
   ionViewDidLoad() {
+    
   }
 
   /**

@@ -16,11 +16,13 @@ export class SignupPage {
   // The account fields for the login form.
   // If you're using the username field with or without email, make
   // sure to add it to the type
-  account: { name: string, email: string, password: string, surname: string } = {
+  account: { name: string, email: string, password: string, surname: string, carnet: string, pin: string } = {
     name: 'Edycar',
     surname: 'Reyes',
     email: 'edycarreyes@gmail.com',
-    password: '123123'
+    password: '123123',
+    carnet: '16-02095-0',
+    pin: 'RWLKCY'
   };
 
   // Our translated text strings
@@ -43,7 +45,7 @@ export class SignupPage {
   signup() {
     this.servicio.registerUser(this.account.email, this.account.password).then((user: any) => {
       const toast = this.toastCtrl.create({
-        message: `Bienvenido ${this.servicio.afAuth.auth.currentUser.email}`,
+        message: `Bienvenido ${this.account.name} ${this.account.surname}`,
         duration: 3000,
         position: 'top'
       });
@@ -66,6 +68,14 @@ export class SignupPage {
             position: 'top'
           });
           toast2.present();
+          break;
+        case 'auth/network-request-failed':
+          const toast3 = this.toastCtrl.create({
+            message: 'Ha ocurrido un problema de red, intentelo nuevamente en un momento.',
+            duration: 3000,
+            position: 'top'
+          });
+          toast3.present();
           break;
         default:
           const toastdefault = this.toastCtrl.create({

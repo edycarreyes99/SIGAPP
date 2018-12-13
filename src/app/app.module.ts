@@ -1,6 +1,7 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Camera } from '@ionic-native/camera';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,6 +21,7 @@ import { NotificationManagerProvider } from '../providers/notification-manager/n
 //Importaciones de Firebase
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
+import { AngularFireDatabaseModule,AngularFireDatabase } from "angularfire2/database";
 
 
 //Importaciones del Stepper
@@ -62,6 +64,7 @@ export function provideSettings(storage: Storage) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -76,7 +79,8 @@ export function provideSettings(storage: Storage) {
     IonicStepperModule,
 
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -90,6 +94,7 @@ export function provideSettings(storage: Storage) {
     SplashScreen,
     StatusBar,
     AngularFireAuth,
+    AngularFireDatabase,
     FingerprintAIO,
     ServicioService,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
