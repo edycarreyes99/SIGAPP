@@ -19,10 +19,7 @@ export class MyApp {
   pages: any[] = [
     { title: 'Componentes', component: 'TabsPage',icon: "book",iconColor:'grey',color:'white' },
     { title: 'Gestiónes de Beca', component: 'CardsPage', icon: "cash",iconColor:'grey',color:'white'},
-    { title: 'Docentes', component: 'ContentPage', icon: "contacts",iconColor:'grey',color:'white' },
-    { title: 'Sala de Chat', component: 'ListMasterPage', icon: "paper-plane",iconColor:'grey',color:'white' },
     { title: 'Mi Cuenta', component: 'MenuPage', icon: "contact",iconColor:'grey',color:'white' },
-    { title: 'Configuración', component: 'SettingsPage', icon: "settings",iconColor:'grey',color:'white' },
     { title: 'Acerca de la App', component: 'SearchPage', icon: "information-circle",iconColor:'grey',color:'white' },
     {title: 'Cerrar Sesion',icon: 'exit', iconColor:"grey",color:'white'}
   ]

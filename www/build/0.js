@@ -22135,22 +22135,12 @@ var SettingsPage = /** @class */ (function () {
                 labels: ["Rojo", "Azul", "Amarillo", "Verde", "Morado", "Naranja"],
                 datasets: [{
                         label: '% de Carrera Concluida',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: [83],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
+                            'rgba(255, 99, 132, 0.2)'
                         ],
                         borderColor: [
                             'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
                         ],
                         borderWidth: 1
                     }]
@@ -22168,57 +22158,19 @@ var SettingsPage = /** @class */ (function () {
         this.doughnutChart = new __WEBPACK_IMPORTED_MODULE_4_chart_js__["Chart"](this.doughnutCanvas.nativeElement, {
             type: 'doughnut',
             data: {
-                labels: ["Rojo", "Azul", "Amarillo", "Verde", "Morado", "Naranja"],
+                labels: ["% de Carrera Concluida"],
                 datasets: [{
                         label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: [83, 17],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
+                            'rgba(255, 99, 132)',
+                            'rgba(255,255,255)'
                         ],
                         hoverBackgroundColor: [
                             "#FF6384",
-                            "#36A2EB",
-                            "#FFCE56",
-                            "#FF6384",
-                            "#36A2EB",
-                            "#FFCE56"
+                            "#FFFFFF"
                         ]
                     }]
-            }
-        });
-        this.lineChart = new __WEBPACK_IMPORTED_MODULE_4_chart_js__["Chart"](this.lineCanvas.nativeElement, {
-            type: 'line',
-            data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-                    {
-                        label: "Porcentaje de Carrera Concluida",
-                        fill: false,
-                        lineTension: 0.1,
-                        backgroundColor: "rgba(75,192,192,0.4)",
-                        borderColor: "rgba(75,192,192,1)",
-                        borderCapStyle: 'butt',
-                        borderDash: [],
-                        borderDashOffset: 0.0,
-                        borderJoinStyle: 'miter',
-                        pointBorderColor: "rgba(75,192,192,1)",
-                        pointBackgroundColor: "#fff",
-                        pointBorderWidth: 1,
-                        pointHoverRadius: 5,
-                        pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                        pointHoverBorderColor: "rgba(220,220,220,1)",
-                        pointHoverBorderWidth: 2,
-                        pointRadius: 1,
-                        pointHitRadius: 10,
-                        data: [65, 59, 80, 81, 56, 55, 40],
-                        spanGaps: false,
-                    }
-                ]
             }
         });
     };
@@ -22254,16 +22206,12 @@ var SettingsPage = /** @class */ (function () {
     ], SettingsPage.prototype, "lineCanvas", void 0);
     SettingsPage = SettingsPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-settings',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\settings\settings.html"*/'<ion-header>\n\n  <ion-navbar color="yellow">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Progreso</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n \n\n    <ion-card>\n\n      <ion-card-header>\n\n        Gráfico de Barras\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <canvas #barCanvas></canvas>\n\n      </ion-card-content>\n\n    </ion-card>\n\n \n\n    <ion-card>\n\n      <ion-card-header>\n\n        Gráfico de Pastel\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <canvas #doughnutCanvas></canvas>\n\n      </ion-card-content>\n\n    </ion-card>\n\n \n\n    <ion-card>\n\n      <ion-card-header>\n\n        Gráfico de Linea\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <canvas #lineCanvas></canvas>\n\n      </ion-card-content>\n\n    </ion-card>\n\n \n\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\settings\settings.html"*/
+            selector: 'page-settings',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\settings\settings.html"*/'<ion-header>\n\n  <ion-navbar color="yellow">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Progreso</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n \n\n    <ion-card>\n\n      <ion-card-header>\n\n        Gráfico de Barras\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <canvas #barCanvas></canvas>\n\n      </ion-card-content>\n\n    </ion-card>\n\n \n\n    <ion-card>\n\n      <ion-card-header>\n\n        Gráfico de Pastel\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <canvas #doughnutCanvas></canvas>\n\n      </ion-card-content>\n\n    </ion-card>\n\n \n\n</ion-content>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\pages\settings\settings.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavController"],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["c" /* Settings */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavController"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__providers__["c" /* Settings */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers__["c" /* Settings */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavParams"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["NavParams"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]) === "function" && _e || Object])
     ], SettingsPage);
     return SettingsPage;
-    var SettingsPage_1;
+    var SettingsPage_1, _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=settings.js.map

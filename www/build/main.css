@@ -137345,6 +137345,7 @@ page-item-detail .item-profile {
   background-position: center center;
   background-size: cover;
   height: 250px;
+  background-image: url("../../assets/SIGAPP Logo Bandera Rounded.png");
 }
 
 page-item-detail .item-detail {

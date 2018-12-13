@@ -14,103 +14,249 @@ export class Items {
 
 
   constructor() {
-    let items2016 = [
+    let items = [
+      {
+        "name": "ELECTIVA DE ACTIVIDAD ESTUDIANTIL III",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Burt is a Bear.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "SISTEMAS GESTORES DE BASE DE DATOS I",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Charlie is a Cheetah.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INFRAESTRUCTURA TIC I",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Donald is a Duck.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "DISEÑO DE BASE DE DATOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Eva is an Eagle.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "ARQUITECTURA DE COMPUTADORES",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "PROGRAMACION ORIENTADA A OBJETOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Molly is a Mouse.",
+        "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INFRAESTRUCTURA TIC II",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INTRODUCCION A LAS ESTRUCTURAS DE BASES DE DATOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Molly is a Mouse.",
+        "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "PROGRAMACION VISUAL I",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Paul is a Puppy.",
+        "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INVESTIGACION II",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Burt is a Bear.",
+        "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "MATEMATICA DISCRETA",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Burt is a Bear.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "PROGRAMACION ESTRUCTURADA",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Charlie is a Cheetah.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "OPTATIVA I",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Donald is a Duck.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "LABORATORIO DE PROGRAMACION ESTRUCTURADA",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Eva is an Eagle.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "CALCULO II",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "FISICA",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Molly is a Mouse.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INGLES APLICADO II",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Paul is a Puppy.",
+        "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INGLES APLICADO III ",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "APLICACIONES DE ESTRUCTURAS DE DATOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Molly is a Mouse.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "ELECTIVA FEI: DISEÑO DE PAGINA WEB",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Paul is a Puppy.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "CIRCUITOS LOGICOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Burt is a Bear.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Charlie is a Cheetah.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
+      {
+        "name": "INVESTIGACION I",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Donald is a Duck.",
+        "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      },
       {
         "name": "Biologia General",
-        "profilePic": "assets/img/speakers/bear.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Burt is a Bear.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "ALGEBRA LINEAL",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Charlie is a Cheetah.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "COMUNICACION Y LENGUAJE",
-        "profilePic": "assets/img/speakers/duck.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Donald is a Duck.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "HISTORIA DE NICARAGUA",
-        "profilePic": "assets/img/speakers/eagle.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Eva is an Eagle.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "INGLES",
-        "profilePic": "assets/img/speakers/elephant.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Ellie is an Elephant.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "ACTIVIDAD ESTUDIANTIL",
-        "profilePic": "assets/img/speakers/mouse.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Molly is a Mouse.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "FILOSOFIA",
-        "profilePic": "assets/img/speakers/puppy.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Paul is a Puppy.",
-        "ciclo": 1
-      },{
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+      }, {
         "name": "COMUNICACION Y LENGUAJE",
-        "profilePic": "assets/img/speakers/duck.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Donald is a Duck.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "MATEMATICA BASICA",
-        "profilePic": "assets/img/speakers/eagle.jpg",
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
         "about": "Eva is an Eagle.",
-        "ciclo": 1
+        "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "CALCULO I",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "FUNDAMENTOS DE INFORMATICA",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Molly is a Mouse.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "ELECTIVA DE ACTIVIDAD ESTUDIANTIL II ",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Paul is a Puppy.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "EDUCACION AMBIENTAL",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Burt is a Bear.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "LOGICA DE PROGRAMACION",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Charlie is a Cheetah.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "LABORATORIO DE LOGICA DE PROGRAMACION",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Donald is a Duck.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "OFIMATICA APLICADA",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Eva is an Eagle.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       },
       {
         "name": "INGLES APLICADO I",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+        "about": "Ellie is an Elephant.",
+        "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
       }
     ];
 
-    for (let item of items2016) {
+    for (let item of items) {
       this.items.push(new Item(item));
     }
   }
