@@ -1,6 +1,7 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Camera } from '@ionic-native/camera';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -9,7 +10,9 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { FingerprintAIO } from "@ionic-native/fingerprint-aio";
-import { ServicioService } from "../servicio.service";
+import { ServicioService } from "./servicio.service";
+
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
@@ -20,6 +23,11 @@ import { NotificationManagerProvider } from '../providers/notification-manager/n
 //Importaciones de Firebase
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
+import { AngularFireDatabaseModule,AngularFireDatabase } from "angularfire2/database";
+import { AngularFirestoreModule,AngularFirestore } from "angularfire2/firestore";
+
+//Importaciones del Stepper
+import { IonicStepperModule } from "ionic-stepper";
 
 
 // The translate loader needs to know where to load i18n files
@@ -58,6 +66,7 @@ export function provideSettings(storage: Storage) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -69,6 +78,8 @@ export function provideSettings(storage: Storage) {
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
 
+    IonicStepperModule,
+
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule
   ],
@@ -79,6 +90,7 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    InAppBrowser,
     User,
     Camera,
     SplashScreen,
