@@ -4,35 +4,38 @@
   <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Mi Perfil</ion-title>
+    <ion-title>Progreso</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic>
-  </div>
-
-  <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <h2>Pre-Requisito 1</h2>
-    <p>{{item.requisito1}}</p>
-    <h2>Pre-Requisito 2</h2>
-    <p>{{item.requisito2}}</p>
-    <h2>Créditos</h2>
-    <p>{{item.creditos}}</p>
-    <h2>Primer Parcial</h2>
-    <p>{{item.parcial1}}</p>
-    <h2>Segundo Parcial</h2>
-    <p>{{item.parcial2}}</p>
-    <h2>Tercer Parcial</h2>
-    <p>{{item.parcial3}}</p>
-    <h2>Nota Final</h2>
-    <p>{{item.notafinal}}</p>
-    <h2>Segunda Convocatoria</h2>
-    <p>{{item.segundaconvocatoria}}</p>
-    <h2>Curso de Verano</h2>
-    <p>{{item.cursoverano}}</p>
-  </div>
+  
+    <ion-card>
+      <ion-card-header>
+        Gráfico de Barras
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+    <ion-card>
+      <ion-card-header>
+        Gráfico de Pastel
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+    <ion-card>
+      <ion-card-header>
+        Gráfico de Linea
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
 </ion-content>
