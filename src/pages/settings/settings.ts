@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { Chart } from "chart.js";
 
 import { Settings } from '../../providers';
 
@@ -15,7 +17,18 @@ import { Settings } from '../../providers';
   selector: 'page-settings',
   templateUrl: 'settings.html'
 })
+
+
 export class SettingsPage {
+
+  @ViewChild('barCanvas') barCanvas;
+  @ViewChild('doughnutCanvas') doughnutCanvas;
+  @ViewChild('lineCanvas') lineCanvas;
+
+  barChart: any;
+  doughnutChart: any;
+  lineChart: any;
+
   // Our local settings object
   options: any;
 
@@ -40,6 +53,7 @@ export class SettingsPage {
     public navParams: NavParams,
     public translate: TranslateService) {
   }
+
 
   _buildForm() {
     let group: any = {
@@ -68,6 +82,53 @@ export class SettingsPage {
   ionViewDidLoad() {
     // Build an empty form for the template to render
     this.form = this.formBuilder.group({});
+    this.barChart = new Chart(this.barCanvas.nativeElement, {
+      type: 'bar',
+      data: {
+        labels: ["Rojo", "Azul", "Amarillo", "Verde", "Morado", "Naranja"],
+        datasets: [{
+          label: '% de Carrera Concluida',
+          data: [83],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+    this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
+
+      type: 'doughnut',
+      data: {
+        labels: ["% de Carrera Concluida"],
+        datasets: [{
+          label: '# of Votes',
+          data: [83,17],
+          backgroundColor: [
+            'rgba(255, 99, 132)',
+            'rgba(255,255,255)'
+          ],
+          hoverBackgroundColor: [
+            "#FF6384",
+            "#FFFFFF"
+          ]
+        }]
+      }
+
+    });
   }
 
   ionViewWillEnter() {

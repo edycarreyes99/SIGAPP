@@ -1,6 +1,7 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Camera } from '@ionic-native/camera';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -9,16 +10,39 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { FingerprintAIO } from "@ionic-native/fingerprint-aio";
+import { ServicioService } from "./servicio.service";
+
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 import { NotificationManagerProvider } from '../providers/notification-manager/notification-manager';
 
+
+//Importaciones de Firebase
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule, AngularFireAuth } from "angularfire2/auth";
+import { AngularFireDatabaseModule,AngularFireDatabase } from "angularfire2/database";
+import { AngularFirestoreModule,AngularFirestore } from "angularfire2/firestore";
+
+//Importaciones del Stepper
+import { IonicStepperModule } from "ionic-stepper";
+
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBjDKoeFzmHoQCrbjeHZ2AU4k90TWXcB5w",
+  authDomain: "sigapp-firecodes.firebaseapp.com",
+  databaseURL: "https://sigapp-firecodes.firebaseio.com",
+  projectId: "sigapp-firecodes",
+  storageBucket: "sigapp-firecodes.appspot.com",
+  messagingSenderId: "658303972824"
 }
 
 export function provideSettings(storage: Storage) {
@@ -42,6 +66,7 @@ export function provideSettings(storage: Storage) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -51,7 +76,12 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+
+    IonicStepperModule,
+
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -60,11 +90,14 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    InAppBrowser,
     User,
     Camera,
     SplashScreen,
     StatusBar,
+    AngularFireAuth,
     FingerprintAIO,
+    ServicioService,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler },

@@ -17,14 +17,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Tutorial', component: 'TutorialPage' },
-    { title: 'Tabs', component: 'TabsPage' },
-    { title: 'Cards', component: 'CardsPage' },
-    { title: 'Content', component: 'ContentPage' },
-    { title: 'Master Detail', component: 'ListMasterPage' },
-    { title: 'Menu', component: 'MenuPage' },
-    { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    { title: 'Componentes', component: 'TabsPage',icon: "book",iconColor:'grey',color:'white' },
+    { title: 'Gestiónes de Beca', component: 'CardsPage', icon: "cash",iconColor:'grey',color:'white'},
+    {title: 'Cerrar Sesion',icon: 'exit', iconColor:"grey",color:'white'}
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
