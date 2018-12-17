@@ -1,16 +1,16 @@
 webpackJsonp([13],{
 
-/***/ 119:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(244);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(245);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(427);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(428);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
 
 
@@ -20,7 +20,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 132:
+/***/ 174:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -33,64 +33,64 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 132;
+webpackEmptyAsyncContext.id = 174;
 
 /***/ }),
 
-/***/ 182:
+/***/ 243:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/cards/cards.module": [
-		330,
+		725,
 		12
 	],
 	"../pages/content/content.module": [
-		331,
+		726,
 		11
 	],
 	"../pages/item-create/item-create.module": [
-		332,
+		727,
 		10
 	],
 	"../pages/item-detail/item-detail.module": [
-		333,
+		728,
 		9
 	],
 	"../pages/list-master/list-master.module": [
-		334,
+		729,
 		8
 	],
 	"../pages/login/login.module": [
-		335,
+		730,
 		7
 	],
 	"../pages/menu/menu.module": [
-		336,
+		731,
 		6
 	],
 	"../pages/search/search.module": [
-		337,
+		732,
 		5
 	],
 	"../pages/settings/settings.module": [
-		338,
+		733,
 		0
 	],
 	"../pages/signup/signup.module": [
-		339,
+		734,
 		4
 	],
 	"../pages/tabs/tabs.module": [
-		340,
+		735,
 		3
 	],
 	"../pages/tutorial/tutorial.module": [
-		341,
+		736,
 		2
 	],
 	"../pages/welcome/welcome.module": [
-		342,
+		737,
 		1
 	]
 };
@@ -105,18 +105,18 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 182;
+webpackAsyncContext.id = 243;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 183:
+/***/ 244:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Api; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -164,7 +164,7 @@ var Api = /** @class */ (function () {
         return this.http.patch(this.url + '/' + endpoint, body, reqOpts);
     };
     Api = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], Api);
     return Api;
@@ -174,13 +174,13 @@ var Api = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 184:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Items; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(426);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -202,39 +202,243 @@ var Items = /** @class */ (function () {
         };
         var items = [
             {
-                "name": "Burt Bear",
-                "profilePic": "assets/img/speakers/bear.jpg",
-                "about": "Burt is a Bear."
+                "name": "ELECTIVA DE ACTIVIDAD ESTUDIANTIL III",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Charlie Cheetah",
-                "profilePic": "assets/img/speakers/cheetah.jpg",
-                "about": "Charlie is a Cheetah."
+                "name": "SISTEMAS GESTORES DE BASE DE DATOS I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Charlie is a Cheetah.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Donald Duck",
-                "profilePic": "assets/img/speakers/duck.jpg",
-                "about": "Donald is a Duck."
+                "name": "INFRAESTRUCTURA TIC I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Eva Eagle",
-                "profilePic": "assets/img/speakers/eagle.jpg",
-                "about": "Eva is an Eagle."
+                "name": "DISEÑO DE BASE DE DATOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Eva is an Eagle.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Ellie Elephant",
-                "profilePic": "assets/img/speakers/elephant.jpg",
-                "about": "Ellie is an Elephant."
+                "name": "ARQUITECTURA DE COMPUTADORES",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Molly Mouse",
-                "profilePic": "assets/img/speakers/mouse.jpg",
-                "about": "Molly is a Mouse."
+                "name": "PROGRAMACION ORIENTADA A OBJETOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 5, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             },
             {
-                "name": "Paul Puppy",
-                "profilePic": "assets/img/speakers/puppy.jpg",
-                "about": "Paul is a Puppy."
+                "name": "INFRAESTRUCTURA TIC II",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INTRODUCCION A LAS ESTRUCTURAS DE BASES DE DATOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "PROGRAMACION VISUAL I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Paul is a Puppy.",
+                "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INVESTIGACION II",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 6, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "MATEMATICA DISCRETA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "PROGRAMACION ESTRUCTURADA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Charlie is a Cheetah.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "OPTATIVA I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "LABORATORIO DE PROGRAMACION ESTRUCTURADA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Eva is an Eagle.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "CALCULO II",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "FISICA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INGLES APLICADO II",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Paul is a Puppy.",
+                "ciclo": 3, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INGLES APLICADO III ",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "APLICACIONES DE ESTRUCTURAS DE DATOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "ELECTIVA FEI: DISEÑO DE PAGINA WEB",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Paul is a Puppy.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "CIRCUITOS LOGICOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Charlie is a Cheetah.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INVESTIGACION I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 4, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "Biologia General",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "ALGEBRA LINEAL",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Charlie is a Cheetah.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "COMUNICACION Y LENGUAJE",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "HISTORIA DE NICARAGUA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Eva is an Eagle.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INGLES",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "ACTIVIDAD ESTUDIANTIL",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "FILOSOFIA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Paul is a Puppy.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            }, {
+                "name": "COMUNICACION Y LENGUAJE",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "MATEMATICA BASICA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Eva is an Eagle.",
+                "ciclo": 1, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "CALCULO I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "FUNDAMENTOS DE INFORMATICA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Molly is a Mouse.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "ELECTIVA DE ACTIVIDAD ESTUDIANTIL II ",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Paul is a Puppy.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "EDUCACION AMBIENTAL",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Burt is a Bear.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "LOGICA DE PROGRAMACION",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Charlie is a Cheetah.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "LABORATORIO DE LOGICA DE PROGRAMACION",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Donald is a Duck.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "OFIMATICA APLICADA",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Eva is an Eagle.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
+            },
+            {
+                "name": "INGLES APLICADO I",
+                "profilePic": "../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Rounded.png",
+                "about": "Ellie is an Elephant.",
+                "ciclo": 2, "requisito1": "MATEMATICA BASICA", "requisito2": "-"
             }
         ];
         for (var _i = 0, items_1 = items; _i < items_1.length; _i++) {
@@ -266,7 +470,7 @@ var Items = /** @class */ (function () {
         this.items.splice(this.items.indexOf(item), 1);
     };
     Items = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [])
     ], Items);
     return Items;
@@ -276,7 +480,7 @@ var Items = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 224:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -298,13 +502,83 @@ var Tab3Root = 'SettingsPage';
 
 /***/ }),
 
-/***/ 227:
+/***/ 379:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicioService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ServicioService = /** @class */ (function () {
+    function ServicioService(afAuth) {
+        this.afAuth = afAuth;
+    }
+    ServicioService.prototype.registerUser = function (email, pass) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.afAuth.auth.createUserWithEmailAndPassword(email, pass)
+                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
+        });
+    };
+    ServicioService.prototype.loginEmail = function (email, pass) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.afAuth.auth.signInWithEmailAndPassword(email, pass)
+                .then(function (userData) { return resolve(userData); }, function (err) { return reject(err); });
+        });
+    };
+    ServicioService.prototype.getAuth = function () {
+        return this.afAuth.authState.map(function (user) { return user; });
+    };
+    ServicioService.prototype.logout = function () {
+        return this.afAuth.auth.signOut().then(function () {
+            console.log("Se ha cerrado sesion");
+            location.reload();
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+    ServicioService.prototype.verificaUsuario = function () {
+        var user = this.afAuth.auth.currentUser;
+        user.sendEmailVerification().then(function () {
+            //email sent
+            console.log('Mensaje de Confirmacion Enviado');
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+    ServicioService.prototype.emailVerified = function () {
+    };
+    ServicioService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["AngularFireAuth"]])
+    ], ServicioService);
+    return ServicioService;
+}());
+
+//# sourceMappingURL=servicio.service.js.map
+
+/***/ }),
+
+/***/ 384:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(389);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -312,28 +586,38 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 240:
+/***/ 389:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export createTranslateLoader */
+/* unused harmony export firebaseConfig */
 /* unused harmony export provideSettings */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_fingerprint_aio__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mocks_providers_items__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_notification_manager_notification_manager__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_http_loader__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_angular__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_fingerprint_aio__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__servicio_service__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_in_app_browser__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__mocks_providers_items__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_component__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_notification_manager_notification_manager__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angularfire2__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angularfire2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_angularfire2__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2_auth__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_angularfire2_auth__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ionic_stepper__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ionic_stepper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_ionic_stepper__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -355,11 +639,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+//Importaciones de Firebase
+
+
+//Importaciones del Stepper
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 function createTranslateLoader(http) {
-    return new __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+    return new __WEBPACK_IMPORTED_MODULE_9__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
 }
+var firebaseConfig = {
+    apiKey: "AIzaSyBjDKoeFzmHoQCrbjeHZ2AU4k90TWXcB5w",
+    authDomain: "sigapp-firecodes.firebaseapp.com",
+    databaseURL: "https://sigapp-firecodes.firebaseio.com",
+    projectId: "sigapp-firecodes",
+    storageBucket: "sigapp-firecodes.appspot.com",
+    messagingSenderId: "658303972824"
+};
 function provideSettings(storage) {
     /**
      * The Settings provider takes a set of default settings for your app.
@@ -367,7 +667,7 @@ function provideSettings(storage) {
      * You can add new settings options at any time. Once the settings are saved,
      * these values will not overwrite the saved values (this can be done manually if desired).
      */
-    return new __WEBPACK_IMPORTED_MODULE_12__providers__["c" /* Settings */](storage, {
+    return new __WEBPACK_IMPORTED_MODULE_15__providers__["c" /* Settings */](storage, {
         option1: true,
         option2: 'Ionitron J. Framework',
         option3: '3',
@@ -378,21 +678,22 @@ var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */]
+                __WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                     loader: {
-                        provide: __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["a" /* TranslateLoader */],
+                        provide: __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: (createTranslateLoader),
                         deps: [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]]
                     }
                 }),
-                __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_10_ionic_angular__["IonicModule"].forRoot(__WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
@@ -409,24 +710,30 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+                __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_20_ionic_stepper__["IonicStepperModule"],
+                __WEBPACK_IMPORTED_MODULE_18_angularfire2__["AngularFireModule"].initializeApp(firebaseConfig),
+                __WEBPACK_IMPORTED_MODULE_19_angularfire2_auth__["AngularFireAuthModule"]
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_9_ionic_angular__["b" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_10_ionic_angular__["IonicApp"]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */]
+                __WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_12__providers__["a" /* Api */],
-                __WEBPACK_IMPORTED_MODULE_11__mocks_providers_items__["a" /* Items */],
-                __WEBPACK_IMPORTED_MODULE_12__providers__["d" /* User */],
-                __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */],
-                __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_10__ionic_native_fingerprint_aio__["a" /* FingerprintAIO */],
-                { provide: __WEBPACK_IMPORTED_MODULE_12__providers__["c" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]] },
+                __WEBPACK_IMPORTED_MODULE_15__providers__["a" /* Api */],
+                __WEBPACK_IMPORTED_MODULE_14__mocks_providers_items__["a" /* Items */],
+                __WEBPACK_IMPORTED_MODULE_13__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+                __WEBPACK_IMPORTED_MODULE_15__providers__["d" /* User */],
+                __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__["a" /* Camera */],
+                __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_19_angularfire2_auth__["AngularFireAuth"],
+                __WEBPACK_IMPORTED_MODULE_11__ionic_native_fingerprint_aio__["a" /* FingerprintAIO */],
+                __WEBPACK_IMPORTED_MODULE_12__servicio_service__["a" /* ServicioService */],
+                { provide: __WEBPACK_IMPORTED_MODULE_15__providers__["c" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */]] },
                 // Keep this to enable Ionic's runtime error handling during development
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_14__providers_notification_manager_notification_manager__["a" /* NotificationManagerProvider */]
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_10_ionic_angular__["IonicErrorHandler"] },
+                __WEBPACK_IMPORTED_MODULE_17__providers_notification_manager_notification_manager__["a" /* NotificationManagerProvider */]
             ]
         })
     ], AppModule);
@@ -437,7 +744,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 307:
+/***/ 426:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -466,13 +773,13 @@ var Item = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 308:
+/***/ 427:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(181);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -545,7 +852,7 @@ var Settings = /** @class */ (function () {
         configurable: true
     });
     Settings = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */], Object])
     ], Settings);
     return Settings;
@@ -555,15 +862,15 @@ var Settings = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 309:
+/***/ 428:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(244);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -648,7 +955,7 @@ var User = /** @class */ (function () {
         this._user = resp.user;
     };
     User = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
     ], User);
     return User;
@@ -658,18 +965,18 @@ var User = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 722:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -697,11 +1004,6 @@ var MyApp = /** @class */ (function () {
         this.pages = [
             { title: 'Componentes', component: 'TabsPage', icon: "book", iconColor: 'grey', color: 'white' },
             { title: 'Gestiónes de Beca', component: 'CardsPage', icon: "cash", iconColor: 'grey', color: 'white' },
-            { title: 'Docentes', component: 'ContentPage', icon: "contacts", iconColor: 'grey', color: 'white' },
-            { title: 'Sala de Chat', component: 'ListMasterPage', icon: "paper-plane", iconColor: 'grey', color: 'white' },
-            { title: 'Mi Cuenta', component: 'MenuPage', icon: "contact", iconColor: 'grey', color: 'white' },
-            { title: 'Configuración', component: 'SettingsPage', icon: "settings", iconColor: 'grey', color: 'white' },
-            { title: 'Acerca de la App', component: 'SearchPage', icon: "information-circle", iconColor: 'grey', color: 'white' },
             { title: 'Cerrar Sesion', icon: 'exit', iconColor: "grey", color: 'white' }
         ];
         platform.ready().then(function () {
@@ -744,14 +1046,14 @@ var MyApp = /** @class */ (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["Nav"]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["Nav"])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-app',template:/*ion-inline-start:"K:\Proyectos Web\SIGAPP\SIGAPP\src\app\app.html"*/'<ion-menu [content]="content">\n\n\n\n    <ion-content>\n\n        <ion-item class="background-profile" id="side-menu21-list-item8">\n\n            <ion-avatar padding-bottom item-center>\n\n                <img src="https://firebasestorage.googleapis.com/v0/b/proyecto-robotica-35bed.appspot.com/o/Profile%20Pictures%2Fedycarreyes%40gmail.com_InShot_20180427_185247614.jpg?alt=media&token=948f8280-e349-4571-b467-920dd6727af2" alt="User Profile">\n\n            </ion-avatar>\n\n            <h2 class="text-white">\n\n                Edycar Reyes\n\n            </h2>\n\n            <h4 class="text-white">\n\n                edycarreyes@gmail.com\n\n            </h4>\n\n        </ion-item>\n\n        <ion-list padding-top  no-lines>\n\n            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="{{p.color}}">\n\n                <ion-icon padding-right name="{{p.icon}}" color="{{p.iconColor}}" item-end></ion-icon>\n\n                {{p.title}}\n\n            </button>\n\n        </ion-list>\n\n    </ion-content>\n\n\n\n</ion-menu>\n\n<ion-nav #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"K:\Proyectos Web\SIGAPP\SIGAPP\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers__["c" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["Platform"], __WEBPACK_IMPORTED_MODULE_6__providers__["c" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["Config"], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -760,13 +1062,13 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ 723:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationManagerProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -790,7 +1092,7 @@ var NotificationManagerProvider = /** @class */ (function () {
         console.log('Hello NotificationManagerProvider Provider');
     }
     NotificationManagerProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], NotificationManagerProvider);
     return NotificationManagerProvider;
@@ -800,5 +1102,5 @@ var NotificationManagerProvider = /** @class */ (function () {
 
 /***/ })
 
-},[227]);
+},[384]);
 //# sourceMappingURL=main.js.map

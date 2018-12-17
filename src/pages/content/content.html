@@ -1,18 +1,46 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>
-      Fingerprint Authentication
-    </ion-title>
+
+  <ion-navbar color="amber">
+    <ion-title>Mi Perfil</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  <ion-row class="login-row" align-items-center>
-    <ion-col col-5></ion-col>
-    <ion-col col-2 class="lock-col">
-      <div class="lock-bg"></div>
-      <img src="../../assets/SIGAPP Logo/Logotipos/SIGAPP Logo Bandera Rounded.png" class="lock-img" tappable (click)="login()" alt="Logo SIGAPP">
-    </ion-col>
-    <ion-col col-5></ion-col>
-  </ion-row>
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic>
+  </div>
+   <ion-item class="background-profile" id="side-menu21-list-item8">
+            <ion-avatar padding-bottom item-center>
+                <img src="https://firebasestorage.googleapis.com/v0/b/proyecto-robotica-35bed.appspot.com/o/Profile%20Pictures%2Fedycarreyes%40gmail.com_InShot_20180427_185247614.jpg?alt=media&token=948f8280-e349-4571-b467-920dd6727af2" alt="User Profile">
+            </ion-avatar>
+            <h2>
+                Edycar Reyes
+            </h2>
+            <h4>
+                edycarreyes@gmail.com
+            </h4>
+        </ion-item>
+
+  <div class="item-detail" padding>
+    <h2>{{item.name}}</h2>
+    <h2>Pre-Requisito 1</h2>
+    <p>{{item.requisito1}}</p>
+    <h2>Pre-Requisito 2</h2>
+    <p>{{item.requisito2}}</p>
+    <h2>Créditos</h2>
+    <p>{{item.creditos}}</p>
+    <h2>Primer Parcial</h2>
+    <p>{{item.parcial1}}</p>
+    <h2>Segundo Parcial</h2>
+    <p>{{item.parcial2}}</p>
+    <h2>Tercer Parcial</h2>
+    <p>{{item.parcial3}}</p>
+    <h2>Nota Final</h2>
+    <p>{{item.notafinal}}</p>
+    <h2>Segunda Convocatoria</h2>
+    <p>{{item.segundaconvocatoria}}</p>
+    <h2>Curso de Verano</h2>
+    <p>{{item.cursoverano}}</p>
+  </div>
 </ion-content>
